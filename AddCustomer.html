@@ -1,0 +1,426 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="E:/Godesa/InterfazClubNorte/form.css">
+<link rel="stylesheet" type="text/css" href="E:/Godesa/InterfazClubNorte/bootstrap.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<!-- multistep form -->
+<form id="msform">
+	<!-- progressbar -->
+	<ul id="progressbar">
+		<li class="active">Suscriptor</li>
+
+		<li>Datos Adicionales</li>
+		<li>Ofertas</li>
+		<li>Medio de Pago</li>
+		<li>Finalizar</li>
+	</ul>
+	<!-- fieldsets -->
+<!-- 	<fieldset>
+		<h2 class="fs-title">Create your account</h2>
+		<h3 class="fs-subtitle">This is step 1</h3>
+		<input type="text" name="email" placeholder="Email" />
+		<input type="password" name="pass" placeholder="Password" />
+		<input type="password" name="cpass" placeholder="Confirm Password" />
+		<input type="button" name="next" class="next action-button" value="Next" />
+	</fieldset>
+
+	<fieldset>
+		<h2 class="fs-title">Social Profiles</h2>
+		<h3 class="fs-subtitle">Your presence on the social network</h3>
+		<input type="text" name="twitter" placeholder="Twitter" />
+		<input type="text" name="facebook" placeholder="Facebook" />
+		<input type="text" name="gplus" placeholder="Google Plus" />
+		<input type="button" name="previous" class="previous action-button" value="Previous" />
+		<input type="button" name="next" class="next action-button" value="Next" />
+	</fieldset>
+ -->
+
+ 	<fieldset>
+		<h2 class="fs-title">Registro Suscriptor</h2>
+		<h3 class="fs-subtitle">Complete con sus datos personales</h3>
+		<input type="text" name="name" placeholder="Nombre" />
+		<input type="text" name="surname" placeholder="Apellido" />
+		<input type="number" name="dni" placeholder="DNI" />
+		<input type="text" name="email" placeholder="Email" />
+
+ 	<div class="form-group">
+        <label class="control-label col-md-6 text-left">Sexo</label>
+        </div>
+
+        <div class="row justify-content-md-center container container2">
+            <div class="radio">
+                	
+                <label class="col-6 col-md-3"   >
+                    <input  name="Sexo" id="optionsRadios1" value="Masculino" checked="" type="radio">
+                    Masculino
+                </label>
+              
+                <label class="col-6 col-md-3">
+                    <input  name="Sexo" id="optionsRadios2" value="Femenino" type="radio">
+                    Femenino
+                </label>
+                <label class="col-6 col-md-3">
+                    <input name="Sexo" id="optionsRadios2" value="Femenino" type="radio">
+                    Otro
+                </label>
+            </div>
+        </div>
+    </div>
+	
+
+		<input type="number" name="Teléfono" placeholder="Celular 3624XXXXXX" />
+		<input type="button" name="Siguiente" class="next action-button" value="Siguiente" />
+	</fieldset>
+
+	<fieldset>
+		<h2 class="fs-title">Datos Adicionales</h2>
+		<h3 class="fs-subtitle">Datos personales adicionales</h3>
+		
+		
+		<div class="form-group">
+        <label class="control-label col-md-6 text-left">Compra el diario</label>
+        </div>
+       
+        <br/>
+
+        <div class="row justify-content-md-center container container2">
+            <div class="radio">
+                	
+                <label class="col-6 col-md-4"   >
+                    <input  name="compraDiario" id="optionsRadios1" value="Siempre" checked="" type="radio">
+                    Siempre
+                </label>
+                <label class="col-6 col-md-4">
+                    <input name="compraDiario" id="optionsRadios2" value="Nunca" type="radio">
+                    Ocasional
+                </label>
+                <label class="col-6 col-md-3">
+                    <input  name="compraDiario" id="optionsRadios2" value="Nunca" type="radio">
+                    Nunca
+                </label>
+                
+            </div>
+        </div>
+   	
+
+   	
+   		<input type="number" name="Teléfono" placeholder="Tel&eacute;fono Alternativo " />
+   		<h3 class="fs-subtitle">Datos de Entrega</h3>
+   		<div class="row"> 
+
+   		  <div class="col-sm-7"><input type="text" maxlength="100" id="address" placeholder="Calle" /></div>
+          <div class="col-sm-5"><input type="text" maxlength="100" id="address" placeholder="Altura" /></div>
+
+   		</div>
+   		
+   
+   		<div class="form-group">
+        <label class="control-label col-md-6 text-left">Provincia</label>
+        </div>
+
+        <div class="row justify-content-md-center container container2">
+            <div class="radio">
+                	
+                <label class="col-6 col-md-3"   >
+                    <input  name="productoDiario" id="optionsRadios1" value="Norte Chaco" checked="" type="radio">
+                    Chaco
+                </label>
+              
+                <label class="col-6 col-md-3">
+                    <input  name="productoDiario" id="optionsRadios2" value="Norte Corrientes" type="radio">
+                    Corrientes
+                </label>
+                 <label class="col-6 col-md-3">
+                    <input  name="productoDiario" id="optionsRadios2" value="Norte Corrientes" type="radio">
+                    Formosa
+                </label>
+                <label class="col-6 col-md-3">
+                    <input  name="productoDiario" id="optionsRadios2" value="Norte Corrientes" type="radio">
+                    Santa Fe
+                </label>
+             
+            </div>
+        </div>
+   		</div>
+
+
+   		<input type="text" maxlength="100" id="address" placeholder="Localidad" />
+   			
+			
+		
+	
+		<input type="button" name="Anterior" class="previous action-button" value="Anterior" />
+		<input type="button" name="Siguiente" class="next action-button" value="Siguiente" />
+	</fieldset>
+
+
+
+    <fieldset>
+		<h2 class="fs-title">Ofertas</h2>
+		<h3 class="fs-subtitle">Registre las ofertas que prefiera</h3>
+		<div class="form-group">
+	     
+    
+	    <div class="container">
+		<div class="row">
+	        <!-- Boxes de Acoes -->
+	    	<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="box">							
+					<div class="icon">
+						<div class="image"><i class="fa fa-thumbs-o-up"> $500 </i></div>
+						<div class="info hvr-curl-top-left">
+							<h3 class="title">Oferta 1</h3>
+							<p>
+								Domingo + 1 !
+							</p>
+								
+						</div>
+				
+				    </div> 
+				   
+				</div>
+
+			 <div class="container3 hvr-underline-from-center">
+			 <br/>
+ 								<label class="radio-inline"><input type="radio" name="optradio">Elegir</label>
+					</div>
+			</div>
+
+			  	<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="box">							
+					<div class="icon">
+						<div class="image"><i class="fa fa-thumbs-o-up"> $500 </i></div>
+						<div class="info hvr-curl-top-left">
+							<h3 class="title">Oferta 2</h3>
+							<p>
+								Domingo + 2 !
+							</p>
+								
+						</div>
+				
+				    </div> 
+				   
+				</div>
+
+			 <div class="container3 hvr-underline-from-center">
+			 <br/>
+ 								<label class="radio-inline"><input type="radio" name="optradio">Elegir</label>
+					</div>
+			</div>
+			
+
+			  	<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="box">							
+					<div class="icon">
+						<div class="image"><i class="fa fa-thumbs-o-up"> $500 </i></div>
+						<div class="info hvr-curl-top-left">
+							<h3 class="title">Oferta 3</h3>
+							<p>
+								Domingo + 3 !
+							</p>
+								
+						</div>
+				
+				    </div> 
+				   
+				</div>
+
+			 <div class="container3 hvr-underline-from-center">
+			 <br/>
+ 								<label class="radio-inline"><input type="radio" name="optradio">Elegir</label>
+					</div>
+			</div>
+			
+
+			  	<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="box">							
+					<div class="icon">
+						<div class="image"><i class="fa fa-thumbs-o-up"> $500 </i></div>
+						<div class="info hvr-curl-top-left">
+							<h3 class="title">Oferta 4</h3>
+							<p>
+								Domingo + 4 !
+							</p>
+								
+						</div>
+				
+				    </div> 
+				   
+				</div>
+
+			 <div class="container3 hvr-underline-from-center">
+			 <br/>
+ 								<label class="radio-inline"><input type="radio" name="optradio">Elegir</label>
+					</div>
+			</div>
+			
+
+			  	<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="box">							
+					<div class="icon">
+						<div class="image"><i class="fa fa-thumbs-o-up"> $500 </i></div>
+						<div class="info hvr-curl-top-left">
+							<h3 class="title">Oferta 5</h3>
+							<p>
+								Domingo + 5 !
+							</p>
+								
+						</div>
+				
+				    </div> 
+				   
+				</div>
+
+			 <div class="container3 hvr-underline-from-center">
+			 <br/>
+ 								<label class="radio-inline"><input type="radio" name="optradio">Elegir</label>
+					</div>
+			</div>
+			
+
+			  	<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="box">							
+					<div class="icon">
+						<div class="image"><i class="fa fa-thumbs-o-up"> $500 </i></div>
+						<div class="info hvr-curl-top-left">
+							<h3 class="title">Oferta 6</h3>
+							<p>
+								Domingo + 6 !
+							</p>
+								
+						</div>
+				
+				    </div> 
+				   
+				</div>
+
+			 <div class="container3 hvr-underline-from-center">
+			 <br/>
+ 								<label class="radio-inline"><input type="radio" name="optradio">Elegir</label>
+					</div>
+			</div>
+			
+			
+
+		</div>
+
+<br/>
+
+<div class="form-group">
+        <label class="control-label col-md-6 text-left">Diario</label>
+        </div>
+
+       
+        <div class="row container container2">
+            <div class="radio">
+                	
+                <label class="col-6 col-md-6"   >
+                    <input  name="productoDiario" id="optionsRadios1" value="Norte Chaco" checked="" type="radio">
+                     Chaco
+                </label>
+              
+                <label class="col-6 col-md-5">
+                    <input  name="productoDiario" id="optionsRadios2" value="Norte Corrientes" type="radio">
+                    Corrientes
+                </label>
+             
+            </div>
+        </div>
+   		</div>
+
+		<!-- /Boxes de Acoes -->
+<br/>
+<div class="form-group">
+		<label class="control-label col-md-6 text-left">Elija d&iacute;as correspondientes</label>
+	
+            
+        </div>
+        	
+        <div class="row container container2">
+        <div class="col-md-2">
+           	<label class="checkbox"><input type="checkbox" value="">Lun.</label>
+	    </div>
+ 		   
+ 		<div class="col-md-2">
+         			<label class="checkbox"><input type="checkbox" value="">Mar.</label>
+ 		</div>
+ 		
+ 		<div class="col-md-2">
+        		    <label class="checkbox"><input type="checkbox" value="">Mie.</label>
+ 		</div>   
+
+
+ 		<div class="col-md-2">
+ 		    <label class="checkbox"><input type="checkbox" value="">Jue.</label>
+		
+ 		</div>    
+ 		<div class="col-md-2">
+
+			<label class="checkbox"><input type="checkbox" value="">Vie.</label>
+ 		</div>   
+ 		<div class="col-md-2">
+
+ 		    <label class="checkbox"><input type="checkbox" value="">S&aacute;b.</label>
+ 		</div>   
+
+        </div>
+   		</div>
+
+		<div class="form-group">
+		<label class="control-label col-md-6 text-left">Ingrese inicio ofertas</label>
+					<input type="date" name="inicioOferta" placeholder="Inicio Oferta" />
+            
+        </div>
+
+   		
+
+	</div>
+	
+        
+        </div>
+   		</div>
+
+		<input type="button" name="Anterior" class="previous action-button" value="Anterior" />
+		<input type="button" name="Siguiente" class="next action-button" value="Siguiente" />
+	</fieldset>
+
+
+	<fieldset>
+		<h2 class="fs-title">Medios de Pago</h2>
+		<h3 class="fs-subtitle">Seleccione medios de pago</h3>
+		
+	   <div class="container">
+				<div class="list-group">
+ 				   <a href="#" class="list-group-item active">Tarjeta de Credito</a>
+  				   <!-- <a href="#" class="list-group-item">Tarjeta Debito</a> -->
+ 				   <a href="#" class="list-group-item">Rapipago</a>
+ 				</div>
+	   </div>
+
+	  </div><!--/col-12-->
+	</div><!--/row-->
+
+		<input type="button" name="previous" class="previous action-button" value="Anterior" />
+		<input type="button" name="next" class="next action-button" value="Siguiente" />
+	</fieldset>
+	<fieldset>
+		<h2 class="fs-title">Datos Completos</h2>
+		<h3 class="fs-subtitle">Confirme que los datos son corectos</h3>
+	
+		<input type="button" name="previous" class="previous action-button" value="Anterior" />
+		<input type="submit" name="submit" class="submit action-button" value="Cofirmar" />
+	</fieldset>
+</form>
+
+<!-- jQuery -->
+<script src="http://thecodeplayer.com/uploads/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<!-- jQuery easing plugin -->
+<script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="E:/Godesa/InterfazClubNorte/formInterfaz.js"></script>
