@@ -14,7 +14,7 @@
 .box > .icon > .image > i { font-size: 36px !important; color: #fff !important; }
 .box > .icon:hover > .image > i { color: white !important; }
 .box > .icon > .info  { margin-top: -24px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; padding: 15px 0 10px 0; border-radius: 2%; }
-.box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+.box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: #333; }
 .box > .icon > .info > h3.title { font-family: "Robot",sans-serif !important; font-size: 16px; color: #222; font-weight: 700; }
 .box > .icon > .info > p { font-family: "Robot",sans-serif !important; font-size: 13px; color: #666; line-height: 1.5em; margin: 20px;}
 .box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a { color: #222; }
@@ -23,13 +23,8 @@
 .box .space { height: 30px; }
 
 
+/*Responisive Design*/
 
-
-
-
-
-
-/*basic reset*/
 
 * {margin: 0; padding: 0;}
 
@@ -45,10 +40,12 @@ html {
 
 body {
 	font-family: montserrat, arial, verdana;
+
+
 }
 /*form styles*/
 #msform {
-	width: 1000px;
+	width: 300px;
 	margin: 50px auto;
 	text-align: center;
 	position: relative;
@@ -61,8 +58,8 @@ body {
 	padding: 20px 30px;
 	
 	box-sizing: border-box;
-	width: 80%;
-	margin: 0 10%;
+	width: 130%;
+	margin: 0 -15%;
 	
 	/*stacking fieldsets above each other*/
 	position: absolute;
@@ -98,6 +95,9 @@ body {
 #msform .action-button:hover, #msform .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
+  
+
+
 /*headings*/
 .fs-title {
 	font-size: 20px;
@@ -110,6 +110,7 @@ body {
 	font-size: 15px;
 	color: #666;
 	margin-bottom: 20px;
+	
 }
 /*progressbar*/
 #progressbar {
@@ -164,7 +165,6 @@ body {
 }
 
 
- 
 .container2 {
 
 	margin-left: 0px;
@@ -180,11 +180,20 @@ body {
 
 }
 
-.container3 {
+
+.row.container2{
+	margin-left: 0px;
+	margin-right: 0px; 
+}
+
+
+@media screen and (min-width: 480px){
+ 
+    .container3 {
 	margin-top: 0px;
 	background: #F0F0F0;
 	border: 1px solid #e0e0e0;
-	margin-left: 21.5%;
+	margin-left: 0%;
 	border-radius: 2%; 
 	width: 123px;
 	padding: 0px 0 0px 0;
@@ -192,12 +201,42 @@ body {
 
 }
 
-
-.row.container2{
-		margin-left: 0px;
-	margin-right: 0px; 
 }
 
+
+@media screen and (min-width: 767px){
+
+
+}
+
+@media screen and (min-width: 950px){
+  
+
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+
+  .container3 {
+	margin-top: 0px;
+	background: #F0F0F0;
+	border: 1px solid #e0e0e0;
+	margin-left: 0%;
+	border-radius: 2%; 
+	width: 93px;
+	padding: 0px 0 0px 0;
+
+}
+}
+
+
+/*Clases responsivas*/
+
+
+
+/*basic reset*/
 
 
 /* Ripple Out */
@@ -333,6 +372,7 @@ body {
   overflow: hidden;
 }
 .hvr-underline-from-center:before {
+  
   content: "";
   position: absolute;
   z-index: -1;
@@ -351,4 +391,7 @@ body {
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
+
+
 }
+
